@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+<%=stylesheet_link_tag "home"%>
+</head>
+<body>
+<div class="d-flex flex-column align-items-center justify-content-center">
+<h1>My Basecamp</h1>
+<p>A project management tool for developers</p>
+<div class="sm mb-3">
+        <%= image_tag("camp.jpg", class: "img-fluid", style: "width: 600px; height: 350px; border-radius: 1rem; object-fit: cover") %>
+</div>
+        <div class="nav-item d-flex gap-3 musa">
+                <%= link_to "log in", new_user_session_path, class:"nav-link border border-1"%>
+                <%= link_to "sign up", new_user_registration_path, class:"nav-link border border-1"%>
+        </div>
+</div>
+</body>
+</html>
