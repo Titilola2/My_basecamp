@@ -3,3 +3,6 @@
   gap: 3rem;
   margin-top: 8px;
 }
+#projects .top a{
+  text-decoration: none;
+}
