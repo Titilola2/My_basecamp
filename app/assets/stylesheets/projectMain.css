@@ -6,3 +6,6 @@
 #projects .top a{
   text-decoration: none;
 }
+#projects .top{
+  padding: 10px 0px;
+}
