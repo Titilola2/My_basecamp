@@ -8,8 +8,11 @@ module Admin
   class ApplicationController < Administrate::ApplicationController
     before_action :authenticate_admin
 
+    private
+
     def authenticate_admin
       # TODO Add authentication logic here.
+      redirect_to projects_path unless current_user && current_user.admin?
     end
 
     # Override this value to specify the number of elements to display at a time

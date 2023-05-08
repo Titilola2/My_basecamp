@@ -16,6 +16,7 @@ class UserDashboard < Administrate::BaseDashboard
     reset_password_token: Field::String,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
+    admin: Field::Boolean,
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -26,8 +27,7 @@ class UserDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = %i[
     id
     email
-    encrypted_password
-    remember_created_at
+    admin
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -41,6 +41,7 @@ class UserDashboard < Administrate::BaseDashboard
     reset_password_token
     created_at
     updated_at
+    admin
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -52,6 +53,7 @@ class UserDashboard < Administrate::BaseDashboard
     remember_created_at
     reset_password_sent_at
     reset_password_token
+    admin
   ].freeze
 
   # COLLECTION_FILTERS

@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
   namespace :admin do
       resources :projects
-      resources :users
+      resources :users do
+        member do
+          patch :grant_admin
+          patch :revoke_admin
+        end
+      end
 
       root to: "projects#index"
     end
