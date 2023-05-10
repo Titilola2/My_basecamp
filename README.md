@@ -22,3 +22,22 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+The setups steps expect following tools installed on the system.
+
+Github
+Ruby 2.4.0
+Rails 5.0.2
+1. Check out the repository
+git clone https://github.com/Titilola2/My_basecamp
+2. Migrate the database
+run rails db:migrate
+3. Start the Rails server
+You can start the rails server using the command given below.
+ $ rails s
+And now you can visit the site with the URL http://localhost:3000
+4. Login into the app as an admin using the login details 
+email:galapagous09@gmail.com
+password:musa123
+
+
+
