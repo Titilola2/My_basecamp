@@ -34,7 +34,7 @@ run rails db:migrate
 3. Start the Rails server
 You can start the rails server using the command given below.
  $ rails s
-And now you can visit the site with the URL http://localhost:3000
+And now you can visit the site with the URL http://localhost:3000 or whaterver custum host you set it to run on.
 4. Login into the app as an admin using the login details 
 email:galapagous09@gmail.com
 password:musa123
